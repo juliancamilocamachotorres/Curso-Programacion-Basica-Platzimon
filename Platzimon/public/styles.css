@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Fredoka+One&display=swap');
+
+body {
+    background-color: #6C4AB6;
+    font-family: 'Fredoka', sans-serif;
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: #B9E0FF;
+    text-align: center;
+    font-size: 46px;
+    font-family: 'Fredoka One', cursive;
+    margin: 20px;
+}
+
+.subtitulo{
+    color: #B9E0FF;
+    font-size: 20px;
+}
+
+.tarjetas,.botones-ataque {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-platzimon{
+    width: 160px;
+    height: 100px;
+    background: #8D72E1;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid #B9E0FF;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    color: #B9E0FF;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta-de-platzimon:hover {
+    cursor: pointer;
+}
+
+.tarjeta-de-platzimon img {
+    width: 70px;
+}
+
+input{
+    display: none;
+}
+input:checked + label{
+    background-color: #6C4AB6;
+}
+
+#boton-mascota{
+    background: #8D72E1;
+    border: 2px solid #B9E0FF;
+    width: 120px;
+    height: 40px;
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 10px 5px;
+    border-radius: 20px;
+    color: #B9E0FF;
+    font-family: 'Fredoka', sans-serif;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-ataque {
+    background: #8D72E1;
+    border: 2px solid #B9E0FF;
+    width: 80px;
+    height: 40px;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px 5px;
+    border-radius: 20px;
+    color: #B9E0FF;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.boton-ataque:active {
+    background-color: #6C4AB6;
+}
+
+#mensajes {
+    width: 180px;
+    background: #8D72E1;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #B9E0FF;
+    flex-direction: column;
+    text-align: center;
+    color: #B9E0FF;
+}
+
+#boton-reiniciar {
+    background: #6C4AB6;
+    border: 2px solid #B9E0FF;
+    width: 120px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 10px 5px;
+    border-radius: 20px;
+    color: #B9E0FF;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+    background: #8D72E1;
+    padding: 0px 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid #B9E0FF;
+    color: #B9E0FF;
+}
+
+.ataques-jugador,.ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+}
+
+.ataques div p {
+    margin: 10px 0px;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button{
+    background: #6C4AB6;
+    border: 2px solid #B9E0FF;
+    width: 80px;
+    height: 40px;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px 5px;
+    border-radius: 20px;
+    color: #B9E0FF;
+    font-family: 'Fredoka', sans-serif;
+}
+
+
+@media (max-width: 360px){
+    .tarjetas {
+        flex-direction: column;
+    }
+    .botones-ataque {
+        flex-direction: column;        
+    }
+    #ver-mapa div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

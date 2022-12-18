@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+
+        <section id="seleccionar-mascota">
+            <h1 class="titulo">¡Platzimon!<br>🔥💧🌿</h1>
+            <h2 class="subtitulo">Elige a tu mascota:</h2>
+
+            <div id="contenedorTarjetas" class="tarjetas">
+                <!-- <input type="radio" name="mascota" id="hipodoge">
+                <label class="tarjeta-de-platzimon" for="hipodoge">
+                    <img src="./assets/mokepons_mokepon_hipodoge_attack.png" alt="Hipodoge">
+                    <p>Hipodoge</p>
+                </label>
+                
+                <input type="radio" name="mascota" id="capipepo">
+                <label class="tarjeta-de-platzimon" for="capipepo">
+                    <img src="./assets/mokepons_mokepon_capipepo_attack.png" alt="Capipepo">
+                    <p>Capipepo</p>
+                </label> 
+                
+                <input type="radio" name="mascota" id="ratigueya">
+                <label class="tarjeta-de-platzimon" for="ratigueya">
+                    <img src="./assets/mokepons_mokepon_ratigueya_attack.png" alt="Ratigueya">
+                    <p>Ratigueya</p>
+                </label>  -->
+                
+                <!-- <label class="tarjeta-de-platzimon" for="langostelvis">Langostelvis</label> 
+                <input type="radio" name="mascota" id="langostelvis">
+                
+                <label class="tarjeta-de-platzimon" for="tucapalma">Tucapalma</label> 
+                <input type="radio" name="mascota" id="tucapalma">
+                
+                <label class="tarjeta-de-platzimon" for="pydos">Pydos</label> 
+                <input type="radio" name="mascota" id="pydos"> -->
+            </div>
+            
+        <!--  Hipodoge -> Agua
+            Capipepo -> Tierra
+            Ratigueya -> Fuego
+            Langostelvis -> Agua y Fuego
+            Tucapalma -> Agua y Tierra
+            Pydos -> Tierra y Fuego -->
+
+            <button id="boton-mascota">Seleccionar</button>
+        </section>
+
+        <section id="ver-mapa">
+            <h2 class="subtitulo">Recorre el mapa con tu platzimon</h2>
+            <canvas id="mapa"></canvas>
+            <button
+            ontouchend="detenerMovimiento()" 
+            ontouchstart="moverArriba()"
+            onmouseup="detenerMovimiento()" 
+            onmousedown="moverArriba()"
+            >Arriba</button>
+            <div>
+                <button 
+                ontouchend="detenerMovimiento()"
+                onmouseup="detenerMovimiento()"
+                ontouchstart="moverIzquierda()"
+                onmousedown="moverIzquierda()"
+                >Izquierda</button>
+                <button 
+                ontouchend="detenerMovimiento()"
+                onmouseup="detenerMovimiento()"
+                ontouchstart="moverAbajo()"
+                onmousedown="moverAbajo()"
+                >Abajo</button>
+                <button 
+                ontouchend="detenerMovimiento()"
+                onmouseup="detenerMovimiento()"
+                ontouchstart="moverDerecha()"
+                onmousedown="moverDerecha()"
+                >Derecha</button>
+            </div>
+        </section>
+
+        <section id="seleccionar-ataque">
+            <h1 class="titulo">¡Platzimon!<br>🔥💧🌿</h1>
+            
+            <h2 class="subtitulo">Elige a tu ataque:</h2>
+
+            <div id="contenedorAtaques" class="botones-ataque">
+                <!-- <button id="boton-fuego" class="boton-ataque">Fuego 🔥</button>
+                <button id="boton-agua" class="boton-ataque">Agua 💧</button>
+                <button id="boton-tierra" class="boton-ataque">Tierra 🌿</button> -->
+            </div>
+
+            <div id="mensajes">
+                
+                <p id="resultado">Mucha suerte!😁</p>
+                
+
+                <section id="reiniciar">
+                    <br>
+                    <button id="boton-reiniciar">Reiniciar</button>
+                </section>
+            </div>
+
+            <div class="ataques">
+                <div class="ataques-jugador">
+                    <p id="vidas-jugador">0</p>
+                    <p id="mascota-jugador"></p>
+                    <p id="ataques-de-jugador"></p>
+                </div>
+                <div class="ataques-enemigo">
+                    <p id="vidas-enemigo">0</p>
+                    <p id="mascota-enemigo"></p>
+                    <p id="ataques-de-enemigo"></p>
+                </div>
+            </div>
+        </section>
+        <script src="./platzimon.js"></script>
+    </body>
+</html>
